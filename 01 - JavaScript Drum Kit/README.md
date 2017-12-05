@@ -6,18 +6,21 @@
 3.  套用css特效
 ### 基本語法
 1.  抓取html dom：  
-<code>document.querySelector('className')</code>
+`document.querySelector('className')`
 2.  註冊事件：  
-<code>window.addEventListener('event', function);</code>
+`window.addEventListener('event', function);`
 3.  加入或移除css效果：  
-<code>classList.add('className')</code>
+`classList.add('className')`
 4.  Template literals：可以參考[這裡](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Template_literals)  
-<code>`String text ${expression}`</code>  
-<code>var a = 5;
-var b = 10;
-console.log(`Fifteen is ${a + b}.`);</code>  
+    ```String text ${expression}```
+    ``
+	  var a = 5;
+	  var b = 10;
+	  console.log(`Fifteen is ${a + b}.`);
+    ``
+    
 5.  forEach：JS中的NodeList可使用迴圈forEach  
-<code>// Code from http://es6-features.org/#StatementBodies  
+`// Code from http://es6-features.org/#StatementBodies  
 // ES6
 nums.forEach(v => {
 	if (v % 5 === 0)
@@ -27,6 +30,6 @@ nums.forEach(v => {
 nums.forEach(function (v) {
 	if (v % 5 === 0)
 		five.push(v);
-})</code>  
+})`
 6.  transitionend事件：會在CSS transition 結束後觸發  
-<code>key.addEventListener('transitionend',removeTransition);</code>
+`key.addEventListener('transitionend',removeTransition);`
