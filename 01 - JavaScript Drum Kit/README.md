@@ -20,7 +20,8 @@
     ```
     
 5.  forEach：JS中的NodeList可使用迴圈forEach  
-```// Code from http://es6-features.org/#StatementBodies  
+```
+// Code from http://es6-features.org/#StatementBodies  
 // ES6  
 nums.forEach(v => {
 	if (v % 5 === 0)
@@ -30,6 +31,7 @@ nums.forEach(v => {
 nums.forEach(function (v) {
 	if (v % 5 === 0)
 		five.push(v);
-})```
+})
+```
 6.  transitionend事件：會在CSS transition 結束後觸發  
 `key.addEventListener('transitionend',removeTransition);`
