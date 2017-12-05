@@ -13,11 +13,11 @@
 `classList.add('className')`
 4.  Template literals：可以參考[這裡](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Template_literals)  
     ```String text ${expression}```  
-    ``
+    ```
 	  var a = 5;  
 	  var b = 10;  
 	  console.log(`Fifteen is ${a + b}.`);  
-    ``
+    ```
     
 5.  forEach：JS中的NodeList可使用迴圈forEach  
 `// Code from http://es6-features.org/#StatementBodies  
