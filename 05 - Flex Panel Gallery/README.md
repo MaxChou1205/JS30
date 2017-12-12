@@ -28,4 +28,4 @@
 ```
 ### 補充說明
 教學中設了兩個class，'open-active'跟'open'，是為了讓圖片先縮小再放大的動畫效果呈現更完美，  
-如果不用類似的動畫效果的話，可利用`transition: transform 0.5s 0.7s`，並將動畫的效果都做在open的class裡。
+如果不用類似的動畫效果的話，可利用`transition: transform 0.5s 0.7s`，並將動畫的效果都做在open的class裡，詳細請見程式碼註解的部分。
