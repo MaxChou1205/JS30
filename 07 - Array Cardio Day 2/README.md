@@ -36,7 +36,7 @@ var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
 myFish.splice(2, 0, 'drum'); // 在index為2的位置插入'drum'
 // myFish ["angel", "clown", "drum", "mandarin", "sturgeon"]
 ```
-6.  [slice](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)：回傳array index開始到index結束**（不包括結束）**的部分拷貝到一個新數組對象。原始array不會被修改
+6.  [slice](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)：回傳array index開始到index結束**（不包括結束）**的部分拷貝到一個新array。**原始array不會被修改**
 ```
 const newComments = [
   ...comments.slice(0,index),
