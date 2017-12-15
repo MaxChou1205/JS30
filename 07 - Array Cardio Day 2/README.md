@@ -23,7 +23,7 @@ const allAudit = people.every(person => (new Date()).getFullYear() - person.year
 // 找到ID為823423的物件
 const comment = comments.find(comment => comment.id==823423);
 ```
-4.  [findIndex](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)： 傳回回呼函式所找到的第一個元素的index，沒有的話則傳回**-1**
+4.  [findIndex](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)： 傳回回呼函式所找到的第一個元素的index，沒有的話則傳回`-1`
 ```
 // 找到ID為823423的物件的index
 const index = comments.findIndex(comment => comment.id==823423);
