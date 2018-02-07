@@ -3,20 +3,19 @@
 ### 程式技巧
 1. 算出nav跟dropdown的位置和大小
 ```
-      const dropdownCoords = dropdown.getBoundingClientRect();
-      const navCoords = nav.getBoundingClientRect();
+const dropdownCoords = dropdown.getBoundingClientRect();
+const navCoords = nav.getBoundingClientRect();
 
-      const coords = {
-        height: dropdownCoords.height,
-        width: dropdownCoords.width,
-        top: dropdownCoords.top - navCoords.top, // nav可能不是在最頂端，dropdown的高度必須-nav的高度才是正確的高度位置
-        left: dropdownCoords.left - navCoords.left // 同上，對x軸校正
-      };
+const coords = {
+    height: dropdownCoords.height,
+    width: dropdownCoords.width,
+    top: dropdownCoords.top - navCoords.top, // nav可能不是在最頂端，dropdown的高度必須-nav的高度才是正確的高度位置
+    left: dropdownCoords.left - navCoords.left // 同上，對x軸校正
+};
 
-      background.style.setProperty('width', `${coords.width}px`);
-      background.style.setProperty('height', `${coords.height}px`);
-      background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
-    }
+background.style.setProperty('width', `${coords.width}px`);
+background.style.setProperty('height', `${coords.height}px`);
+background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
 ```
 2. 滑鼠快速來回各ul時，可能會造成動畫顯示的延遲，所以用以下方法
 ```
