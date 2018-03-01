@@ -1,6 +1,6 @@
-###實現效果
+### 實現效果
 藉由滑鼠滑動控制bar改變影片的播放速度
-###程式實作
+### 程式實作
 ```
 const speed = document.querySelector('.speed');
 const bar = speed.querySelector('.speed-bar');
